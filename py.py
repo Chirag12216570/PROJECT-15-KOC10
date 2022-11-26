@@ -1,14 +1,12 @@
-a=int(input("enter your starting range"))
-b=int(input("enter your ending range"))
-for i in range(a,b+1):
-    for l in range(2,int(i/2)+1):
-        if i%l==0:
-            print(i," is a composite number")
-            break
-        else:
-            print(i," is a prime number")
-else:
-    print(i," is a composite number")
-
-            
- 
+p=int(input("ENTER THE STARTING RANGE "))
+q=int(input("ENTER THE ENDING RANGE "))
+for a in range(p,q+1):
+    if a>1:
+        for i in range(2,int(a/2)+1):
+                if a%i==0:
+                    print(a," is a composite number")
+                    break
+        else:   
+            print(a," is a prime number")
+    else:
+        print(a,"is a composite number")
